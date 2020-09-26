@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#top{
+    background: url(https://image.freepik.com/free-vector/casino-luxury-vip-invitation-with-celebration-party-gambling-banner-background_29865-1738.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#move{
+    color: transparent;
+}
+.header{
+    background: #494949fa;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size:25px;
+    color: white;
+    word-spacing: 10px;
+}
+.mainbox{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:500px;
+    width:500px; 
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all ease 5s;
+}
+
+span{
+    width:50%;
+    height:50%;
+    display: inline-block;
+    position: absolute;
+}
+.span1{
+    clip-path: polygon(0 95%, 100% 52%, 0 8%);
+    background-color:#a51b00;
+    top:120px;
+    left:0;
+}
+.span2{
+    clip-path: polygon(100% 92%, 0 52%, 100% 8%);
+    background-color: black;
+    top:120px;
+    right:0;
+}
+.span3{
+    clip-path: polygon(52% 0, 8% 100%, 92% 100%);
+    background-color:  rgb(23, 23, 23);
+    bottom:0;
+    left:120px;
+}
+.span4{
+    clip-path: polygon(52% 100%, 95% 0, 8% 0);
+    background-color:rgb(94, 6, 6);;
+    top:0;
+    left:120px;
+}
+.box2{
+    width:100%;
+    height: 100%;
+    transform: rotate(-135deg);
+}
+span b{
+   width:65px;
+   height:65px;
+   line-height: 65px;
+   border-radius: 50%;
+   font-size: 26px;
+   background-color: white;
+   text-align: center;
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   box-shadow: inset 0 3px 3px  #717171;
+}
+.spin{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;  
+    position: absolute;
+    top: 50%;
+    left: 47.8%;
+    box-shadow: 0px 5px 20px #000;
+    background-color: #f1ce59;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+}
+.spin:active{
+    width: 75px;
+    height: 75px;
+    font-size: 22px;
+}
+.arrow{
+  font-size: 35px;
+  position:absolute;
+  top: 50%;
+  right: 30.8%;
+  color:#161814fa;
+}
+.rewards{
+    background: url(23673.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.inputno{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   height: 250px;
+   width: 100%;
+   font-size:  40px;
+   font-family: 'Libre Baskerville', serif;
+   color: gray;
+   scroll-behavior: smooth;
+}
+input{
+    border: none;
+    border-bottom: 1px solid white;
+    width: 50px;;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 5px 5px;
+    padding-left: 27px;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+.btn-class{
+    position: absolute;
+    margin-top: 225px;
+    text-align: center;
+    width: 100%;
+}
+#btn{
+    padding: 8px 37px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #7c7c7c;
+    outline: none;
+    border-radius: 5px;     
+}
+.results{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    width: 100%;
+    color: white;
+}
+.image-winner{
+    margin-top: 20px;
+    display: none;
+}
+.image-winner button{
+    padding: 8px 37px;
+    margin-top: 50px;
+    margin-left: 162px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #7c7c7c;
+    outline: none;
+    border-radius: 5px;
+}
+.image-lose{
+    display: none;
+}
+.image-lose img{
+    width: 300px;
+    height: 300px;
+} 
+.image-lose button{
+    padding: 8px 37px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #7c7c7c;
+    outline: none;
+    border-radius: 5px;
+}

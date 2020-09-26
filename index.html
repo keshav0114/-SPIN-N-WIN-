@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel Lottery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01cf3acb8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="top">
+     <div class="header">
+        <h1>"SPIN  N  WIN"</h1>
+     </div>
+     <a id="move" href="#abc">move</a>
+
+     <div class="mainbox">
+         <div  id="box"class="box">
+            <div class="box1">
+                <span class="span1"><b>1</b></span>
+                <span class="span2"><b>2</b></span>
+                <span class="span3"><b>3</b></span>
+                <span class="span4"><b>4</b></span>
+            </div>
+            <div class="box2">
+                <span class="span1"><b>5</b></span>
+                <span class="span2"><b>6</b></span>
+                <span class="span3"><b>7</b></span>
+                <span class="span4"><b>8</b></span>
+            </div>
+         </div>
+         <button class="spin" onclick="myfunction()">SPIN</button>
+         <div class="arrow"><i class="fas fa-arrow-left"></i></div>
+     </div>
+    </section>
+    <section   id="abc" class="rewards">
+
+    <div class="inputno">
+      <label for="number">Ticket number :
+          <br>
+       <input id="input1" type="text"/>
+      </label> 
+    </div>
+    <div class="btn-class">
+    <button id="btn" onclick="getinputvalue()">Check</button>
+    </div>
+    <div class="results">
+        <div id="winner" class="image-winner">
+            <img src="Background copy.png">
+            <br>
+            <button onclick="location.reload();" >Play Again</button>
+        </div>
+        <div id="lose" class="image-lose">
+          <img src="Background copy2.png">
+          <br>
+         <button onclick="location.reload();">Play Again</button>
+        </div>
+    </div>
+
+    
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
